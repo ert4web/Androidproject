@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.training.flyhigh.SocialMedia"
+    >
+
+    <RelativeLayout
+        android:id="@+id/logo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_main">
+
+        <include layout="@layout/toolbar"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myprofile_logo"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="5dp"
+            android:text="Social Media"
+            android:textAlignment="center"
+            android:paddingVertical="10dp"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_layout"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="10dp"
+        >
+        //row-1
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="18dp"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/fb"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/facebook"
+
+                android:layout_weight="1"
+                android:layout_marginHorizontal="15dp"
+                />
+
+            <Button
+                android:id="@+id/twitter"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/twitter"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="15dp"
+                />
+            <Button
+                android:id="@+id/insta"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/instagram"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="15dp"
+                />
+        </LinearLayout>
+
+        //row-2
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="18dp"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/linkedin"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/linkedin"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="15dp"
+                />
+
+            <Button
+                android:id="@+id/gplus"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/google_plus"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="15dp"
+                />
+            <Button
+                android:id="@+id/pintrest"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/pinterest"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="15dp"
+                />
+        </LinearLayout>
+
+        //row-3
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="18dp"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/tumblr"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/tumblr"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="15dp"
+                />
+
+            <Button
+                android:id="@+id/flickr"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/flickr"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="15dp"
+                />
+            <Button
+                android:id="@+id/fm"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/lastfm"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="15dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
